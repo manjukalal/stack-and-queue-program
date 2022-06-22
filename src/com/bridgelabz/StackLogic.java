@@ -9,14 +9,27 @@ public class StackLogic {
         stack.addFirst(data);
     }
 
+    public void peek() {
+        System.out.println(" peek element in the stacklist :"  + stack.peek());
+    }
+
+    public void pop() {
+        if (stack.size() == 0) {
+            System.out.println("List is empty");
+        } else {
+            stack.pop();
+        }
+    }
+
     public void myPrint() {
         System.out.println("Stacklist is :");
         for (Integer i : stack) {
-            System.out.println(" " + i);
+            System.out.print(" " + i);
+
         }
+
     }
 }
-
 
 
 
